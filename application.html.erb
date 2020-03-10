@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShopApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Shopping cROMAN</h1>
+    <header>
+      <ul>
+        <li>ログイン中の店舗</li>
+        <li>登録商品管理</li>
+        <li>ログアウト</li>
+        <li>ログイン</li>
+        <li>新規登録</li>
+      </ul>
+    </header>
+    <div class="contents">
+      <div class="content">
+        <div class="content-head">
+          <h3>サンドラッグ元住吉店</h3>
+          <label class="dui-checkbox -toggle">
+                  <input name="pd" value="2" type="checkbox">
+                  <span class="label">「商品価格＋送料−獲得予定ポイント」で価格表示</span>
+                </label>
+        </div>
+        <p>
+  <label for="name1">名前</label>
+  <input type="text" name="namae" id="name1">
+</p>
+        <div class="content-body">
+          <p></p>
+
+        </div>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
